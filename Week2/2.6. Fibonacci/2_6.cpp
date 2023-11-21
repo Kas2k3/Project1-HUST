@@ -3,7 +3,7 @@
 using namespace std;
 int a[1000];
 int n;
-int fibonal(int a[], int n) {
+int fibonacci(int a[], int n) {
     if( n ==0) {
         a[n] = 0;
         
@@ -12,8 +12,10 @@ int fibonal(int a[], int n) {
         a[n] = 1;
       
     }
+
+    //Ham de quy tinh toan fibonacci voi so >= 2
     if(n >= 2) {
-        a[n] = fibonal(a,n-1) + fibonal(a,n-2);
+        a[n] = fibonacci(a,n-1) + fibonacci(a,n-2);
         
     }
     return a[n];
@@ -21,6 +23,7 @@ int fibonal(int a[], int n) {
 int main() 
 { 
     cin >> n;
-    cout << fibonal(a,n) - fibonal(a,n-2);
+    //Tinh fibonacci(a, n-1)
+    cout << fibonacci(a,n) - fibonacci(a,n-2);
 
 }
