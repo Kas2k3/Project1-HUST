@@ -30,7 +30,7 @@ int is_valid(int t[N][N], int row, int col, int num) {
 }
 
 void solve_sudoku(int t[N][N], int row, int col) {
-    //Khi da dien het cac hang va cot thi tang bien dem
+    //Khi da dien het cac hang va cot thi tang bien dem 
     if (row == N - 1 && col == N) {
         count++;
         return;
