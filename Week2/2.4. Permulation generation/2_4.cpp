@@ -21,7 +21,7 @@ void process(int i) {
             mark[j] = 1;
             x[i] = j;
             process(i + 1);
-            mark[j] = 0;
+            mark[j] = 0; 
         }
     }
     
